@@ -1,0 +1,140 @@
+body {
+  font-family: "Meiryo", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background: #1e293b;
+}
+
+main {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.team {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 1em;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.hero-slot {
+  width: 60px;
+  height: 60px;
+  background: rgba(51, 65, 85, 0.8);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 120px);
+  gap: 0.8em;
+  justify-content: center;
+}
+
+.hero-card {
+  text-align: center;
+  background: rgba(51, 65, 85, 0.8);
+  padding: 0.5em;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.hero-card:hover {
+  background: rgba(71, 85, 105, 0.9);
+}
+
+.hero-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+}
+
+.role {
+  font-size: 0.8em;
+  color: #94a3b8;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.3em;
+}
+
+.card-buttons button {
+  padding: 0.3em 0.6em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.btn-ally {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-enemy {
+  background: #ef4444;
+  color: white;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 1em;
+}
+
+button {
+  margin: 0.3em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+}
+
+.results {
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.result-card {
+  background: rgba(51, 65, 85, 0.8);
+  padding: 0.8em;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+
+.hero-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  margin-right: 0.6em;
+  vertical-align: middle;
+}
+
+/* ロール名の上下に余白を追加 */
+.role-section {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

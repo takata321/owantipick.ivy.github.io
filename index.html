@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overwatch 相性チェッカー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Overwatch アンチピック＆シナジー分析</h1>
+  </header>
+
+  <main>
+    <section id="selection">
+      <div class="team ally">
+        <h2>味方（最大4）※現在調整中につき、影響なし</h2>
+        <div id="allyTeam" class="team-list"></div>
+      </div>
+
+      <div class="team enemy">
+        <h2>敵（最大5）</h2>
+        <div id="enemyTeam" class="team-list"></div>
+      </div>
+    </section>
+
+    <section id="heroGrid">
+        
+      <h2>ヒーロー一覧</h2>
+      <div class="controls">
+        <button class="clearBtn">選択をクリア</button>
+        <button class="analyzeBtn">分析する</button>
+
+        <h2 class="role-section">タンク</h2>
+        <div id="tankList" class="hero-grid"></div>
+
+        <h2 class="role-section">ダメージ</h2>
+        <div id="dpsList" class="hero-grid"></div>
+
+        <h2 class="role-section">サポート</h2>
+        <div id="supportList" class="hero-grid"></div>
+
+        <button class="clearBtn">選択をクリア</button>
+        <button class="analyzeBtn">分析する</button>
+      </div>
+    </section>
+
+    <section id="results" class="results">
+      <h2>分析結果</h2>
+      <div id="resultsList"></div>
+    </section>
+
+    <aside id="detail" class="detail">
+      <h2>詳細</h2>
+      <p>ヒーローをクリックすると詳細が表示されます。</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
